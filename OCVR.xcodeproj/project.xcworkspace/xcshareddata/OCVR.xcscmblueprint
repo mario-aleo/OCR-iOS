@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D4D1F23162C5C9EBBA8B66E35F14B22E723140F9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D4D1F23162C5C9EBBA8B66E35F14B22E723140F9" : 0,
+    "3660FA262968B093AEDF6B47CB6D05623EFC484B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C81DE011-C2D1-4BE9-A6AB-7A9A9CFB94EE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D4D1F23162C5C9EBBA8B66E35F14B22E723140F9" : "OCR-iOS",
+    "3660FA262968B093AEDF6B47CB6D05623EFC484B" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OCVR",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OCVR.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/marioaleogolsat\/maps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3660FA262968B093AEDF6B47CB6D05623EFC484B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/marioaleogolsat\/OCR-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D4D1F23162C5C9EBBA8B66E35F14B22E723140F9"
+    }
+  ]
+}

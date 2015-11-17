@@ -11,6 +11,8 @@
 #import <opencv2/opencv.hpp>
 #import <TesseractOCR/TesseractOCR.h>
 
+#import <opencv2/highgui/highgui_c.h>
+
 #import <AVFoundation/AVFoundation.h>
 
 

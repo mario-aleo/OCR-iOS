@@ -35,7 +35,7 @@
 
 - (IBAction)openCamera:(id)sender
 {
-    UIImagePickerController *imgPicker = [[UIImagePickerController alloc] init];
+    /*UIImagePickerController *imgPicker = [[UIImagePickerController alloc] init];
     imgPicker.delegate = self;
     
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
@@ -43,7 +43,30 @@
         imgPicker.allowsEditing = YES;
         imgPicker.sourceType = UIImagePickerControllerSourceTypeCamera;
         [self presentViewController:imgPicker animated:YES completion:nil];
+    }*/
+    
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    if (imagePickerController.sourceType == UIImagePickerControllerSourceTypeCamera) {
+        //Create camera overlay
+        CGRect f = imagePickerController.view.bounds;
+        f.size.height -= imagePickerController.navigationBar.bounds.size.height;
+        CGFloat barHeight = (f.size.height - f.size.width) / 2;
+        UIGraphicsBeginImageContext(f.size);
+        [[UIColor colorWithWhite:0 alpha:.5] set];
+        UIRectFillUsingBlendMode(CGRectMake(0, 0, f.size.width, barHeight), kCGBlendModeNormal);
+        UIRectFillUsingBlendMode(CGRectMake(0, 370, f.size.width, barHeight), kCGBlendModeNormal);
+        UIImage *overlayImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        
+        UIImageView *overlayIV = [[UIImageView alloc] initWithFrame:f];
+        overlayIV.image = overlayImage;
+        [imagePickerController setCameraOverlayView:overlayIV];
     }
+    
+    imagePickerController.delegate = self;
+    [self presentViewController:imagePickerController animated:YES completion:nil];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker
@@ -117,7 +140,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
 // Fim Metodos Conversão iOS - OpenCV
 
 - (IBAction)renderThis:(id)sender{
-    cv::Mat image = [self cvMatFromUIImage: self.imgTaken];
+    /*cv::Mat image = [self cvMatFromUIImage: self.imgTaken];
     
 
     cv::Mat grey;
@@ -129,10 +152,10 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     cv::Mat thres;
     cv::threshold(newMat, thres, 0, 275, cv::THRESH_OTSU|cv::THRESH_BINARY);
     
-    self.imgPreview.image = [self UIImageFromCVMat:(thres)];
+    self.imgPreview.image = [self UIImageFromCVMat:(thres)];*/
     
     
-    /*cv::Mat image = [self cvMatFromUIImage: self.imgTaken];
+    cv::Mat image = [self cvMatFromUIImage: self.imgTaken];
     
     cv::Mat grey;
     cv::cvtColor(image, grey, CV_BGR2GRAY);
@@ -146,7 +169,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     cv::Mat thres;
     cv::threshold(cannyMat, thres, 0, 255, cv::THRESH_OTSU|cv::THRESH_BINARY_INV);
     
-    self.imgPreview.image = [self UIImageFromCVMat:(thres)];*/
+    self.imgPreview.image = [self UIImageFromCVMat:(thres)];
     
     
     /*cv::Mat image = [self cvMatFromUIImage: self.imgTaken];

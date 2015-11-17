@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C81DE011-C2D1-4BE9-A6AB-7A9A9CFB94EE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OCVR</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3660FA262968B093AEDF6B47CB6D05623EFC484B</key>
+		<string>https://github.com/marioaleogolsat/maps.git</string>
+		<key>D4D1F23162C5C9EBBA8B66E35F14B22E723140F9</key>
+		<string>https://github.com/marioaleogolsat/OCR-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OCVR.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3660FA262968B093AEDF6B47CB6D05623EFC484B</key>
+		<string>../../..</string>
+		<key>D4D1F23162C5C9EBBA8B66E35F14B22E723140F9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/marioaleogolsat/OCR-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D4D1F23162C5C9EBBA8B66E35F14B22E723140F9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3660FA262968B093AEDF6B47CB6D05623EFC484B</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D4D1F23162C5C9EBBA8B66E35F14B22E723140F9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OCR-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
